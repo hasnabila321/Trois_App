@@ -16,7 +16,7 @@
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:src="@drawable/campaign_launch_monochromatic"/>
-    
+
     <Button
         android:id="@+id/button_new_user"
         android:background="@drawable/button1"
