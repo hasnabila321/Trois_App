@@ -11,6 +11,7 @@ import com.squareup.picasso.Picasso;
 public class ProductDetails extends AppCompatActivity {
     private ImageView prodPict;
     private TextView prodName;
+    private TextView prodDesc;
     private TextView prodPrice;
 
     @Override
@@ -20,6 +21,7 @@ public class ProductDetails extends AppCompatActivity {
 
 //        prodPict = findViewById(R.id.details_prod_pict);
         prodName = findViewById(R.id.details_title_prod);
+        prodDesc = findViewById(R.id.details_prod_desc);
         prodPrice = findViewById(R.id.details_prod_price);
 
         Bundle data = getIntent().getExtras();
@@ -31,6 +33,7 @@ public class ProductDetails extends AppCompatActivity {
 //                .error(R.drawable.ic_launcher_foreground)
 //                .into(prodPict);
         prodName.setText(club.getProduct());
+        prodDesc.setText(club.getDescription());
         prodPrice.setText(club.getPrice());
 
     }

@@ -27,10 +27,10 @@ public class ProductList extends AppCompatActivity implements ProductAdapter.Lis
 
         prodList = new ArrayList<>();
 
-        prodList.add(new GetSetProduct(" ", "Fußball-Bundesliga", description));
-        prodList.add(new GetSetProduct(" ", "La Liga", description));
-        prodList.add(new GetSetProduct(" ", "Ligue 1", description));
-        prodList.add(new GetSetProduct(" ", "English Premier League", description));
+        prodList.add(new GetSetProduct(" ", "Fußball-Bundesliga", "deskripsi produk", "$0.0"));
+        prodList.add(new GetSetProduct(" ", "La Liga", "deskripsi produk", "$0.0"));
+        prodList.add(new GetSetProduct(" ", "Ligue 1", "deskripsi produk", "$0.0"));
+        prodList.add(new GetSetProduct(" ", "English Premier League", "deskripsi produk", "$0.0"));
 
         ProductAdapter productAdapter = new ProductAdapter(this, prodList);
         productAdapter.setListener(this);

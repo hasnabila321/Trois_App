@@ -8,17 +8,20 @@ import androidx.annotation.NonNull;
 public class GetSetProduct implements Parcelable {
     String picture;
     String product;
+    String description;
     String price;
 
-    public GetSetProduct(String picture, String product, String price) {
+    public GetSetProduct(String picture, String product, String description, String price) {
         this.picture = picture;
         this.product = product;
+        this.description = description;
         this.price = price;
     }
 
     protected GetSetProduct(Parcel in) {
         picture = in.readString();
         product = in.readString();
+        description = in.readString();
         price = in.readString();
     }
 
@@ -58,6 +61,14 @@ public class GetSetProduct implements Parcelable {
         this.price = price;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -67,6 +78,7 @@ public class GetSetProduct implements Parcelable {
     public void writeToParcel(@NonNull Parcel dest, int flags) {
         dest.writeString(picture);
         dest.writeString(product);
+        dest.writeString(description);
         dest.writeString(price);
     }
 }
