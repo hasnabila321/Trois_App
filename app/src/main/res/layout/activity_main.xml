@@ -7,12 +7,14 @@
     android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/ImageView"
         android:layout_width="280dp"
         android:layout_height="100dp"
         android:src="@drawable/logo"
-        android:layout_gravity="center"
-        android:layout_marginTop="280dp"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="280dp"
+        />
 
 </LinearLayout>

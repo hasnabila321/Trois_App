@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Log.i("TEST_THREAD", "START");
-                        Intent intent = new Intent(MainActivity.this, ProductList.class);
+                        Intent intent = new Intent(MainActivity.this, WelcomeScreen.class);
                         startActivity(intent);
                         Toast.makeText(MainActivity.this, "Enter", Toast.LENGTH_SHORT).show();
                     }
