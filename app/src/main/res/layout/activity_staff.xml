@@ -37,7 +37,7 @@
         android:textColorHint="@color/color_base"/>
 
     <Button
-        android:id="@+id/button_staff"
+        android:id="@+id/button_staff_login"
         android:background="@drawable/button1"
         android:textColor="@color/white"
         android:layout_width="250dp"

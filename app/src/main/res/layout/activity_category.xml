@@ -39,34 +39,36 @@
         android:layout_marginTop="50dp">
 
         <LinearLayout
+            android:id="@+id/clothing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/ButtonClothing"
+                android:id="@+id/button_clothing"
                 android:layout_width="150dp"
                 android:layout_height="176dp"
-                android:background="@drawable/clothing"
-                />
+                android:background="@drawable/clothing" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Clothing"
-                android:textColor="@color/black"
+                android:layout_gravity="center"
                 android:layout_marginTop="5dp"
-                android:layout_gravity="center"/>
-            </LinearLayout>
+                android:text="Clothing"
+                android:textColor="@color/black" />
+        </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="30dp"
-                >
+        <LinearLayout
+            android:id="@+id/electronic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            >
 
             <ImageButton
-                android:id="@+id/ButtonElektronik"
+                android:id="@+id/button_electronic"
                 android:layout_width="150dp"
                 android:layout_height="176dp"
                 android:background="@drawable/elektronik"
@@ -78,7 +80,7 @@
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
                 android:layout_gravity="center"/>
-            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -92,10 +94,11 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/book">
 
             <ImageButton
-                android:id="@+id/ButtonBook"
+                android:id="@+id/button_book"
                 android:layout_width="150dp"
                 android:layout_height="176dp"
                 android:background="@drawable/book"
@@ -114,10 +117,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginLeft="30dp"
+            android:id="@+id/makeup"
             >
 
             <ImageButton
-                android:id="@+id/ButtonMakeup"
+                android:id="@+id/button_makeup"
                 android:layout_width="150dp"
                 android:layout_height="176dp"
                 android:background="@drawable/makeup"
